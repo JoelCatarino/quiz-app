@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+body {
+  background: #05637a;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body.correct {
+  background: #0f791a;
+}
+
+body.wrong {
+  background: #d00000;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  background: #05637a;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  outline: none;
+}
+
+.btn:hover {
+    border-color: #000000;
+}
+
+.btn.correct {
+    background: #0f791a;
+}
+
+.btn.wrong {
+    background: #d00000;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hide {
+    display: none;
+}
